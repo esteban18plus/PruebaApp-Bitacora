@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>DebugDate</title>
+
+	<link rel="stylesheet" type="text/css" href="Assets/css/lungo.css">
+	<link rel="stylesheet" type="text/css" href="Assets/css/lungo.icon.css">
+	<link rel="stylesheet" type="text/css" href="Assets/css/lungo.theme.css">
+
+	<script type="text/javascript" src="Assets/js/jquery-2.1.4.js" ></script>
+	<script src="Assets/js/highcharts.js"></script>
+
+</head>
+<body>
+
+	<section id="main" data-transition="cover">      
+		<article id="main-article" class="active indented splash">
+			<div data-control="groupbar">
+				<img src="http://www.epmtigouneareametropolitana.com/wp-content/uploads/2014/09/tigoune.png" class="title centered" >
+				<h3 class="title centered text bold" >Bienvenido a bitacora</h3>
+				<a href="" class="button anchor" data-view-section="main_section" data-label="Empezar"></a>
+				<div class="form">
+					<fieldset>
+						<fieldset data-icon="calendar">
+							<label>Fecha desde:</label>
+							<input type="date" id="fec_desde_estado" placeholder="fecha inicial">
+						</fieldset>
+						<fieldset data-icon="calendar">
+							<label>Fecha Hasta:</label>
+							<input type="date" id="fec_hasta_estado" placeholder="fecha inicial">
+						</fieldset>
+						<button class="anchor" id="btnEstadoUpdate" >Actualizar</button>
+					</fieldset>
+				</div>
+			</div>
+
+
+		</article>
+
+	</section>
+
+	<script type="text/javascript" src="Assets/js/moment.js" ></script>
+	<script type="text/javascript" src="Assets/js/quo.min.js" ></script>
+	<script type="text/javascript" src="Assets/js/lungo.js" ></script>
+	<script>
+		Lungo.init({
+			name: "Bitacora",
+			version: "0.0.1"
+		});
+	</script>
+
+</body>
+</html>
